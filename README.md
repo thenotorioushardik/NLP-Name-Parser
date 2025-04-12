@@ -6,11 +6,11 @@ This code provides an **NLP-driven approach** for cleaning and extracting first 
 
 ## Features
 
-✅ **Advanced NLP Processing**: Uses **spaCy's Transformer-based model** (`en_core_web_trf`) for precise entity recognition.  
-✅ **Intelligent Honorific Removal**: Detects and removes titles only when they appear as separate words.  
-✅ **Handles Noisy Data**: Preprocesses input to fix spacing inconsistencies.  
-✅ **Optimized with Swifter**: Applies parallelized name cleaning for efficient large-scale processing.  
-✅ **Flexible CSV Processing**: Reads, processes, and writes structured output files.  
+- **Advanced NLP Processing**: Uses **spaCy's Transformer-based model** (`en_core_web_trf`) for precise entity recognition.  
+- **Intelligent Honorific Removal**: Detects and removes titles only when they appear as separate words.  
+- **Handles Noisy Data**: Preprocesses input to fix spacing inconsistencies.  
+- **Optimized with Swifter**: Applies parallelized name cleaning for efficient large-scale processing.  
+- **Flexible CSV Processing**: Reads, processes, and writes structured output files.  
 
 ## Setup
 
@@ -30,7 +30,7 @@ python -m spacy download en_core_web_trf
 
 ## Usage
 
-### 1️⃣ Process a CSV File
+### 1️. Process a CSV File
 
 ```python
 name_column = "<ENTER COLUMN NAME>"
@@ -40,7 +40,7 @@ output_csv = "output.csv"
 process_csv(input_csv, output_csv)
 ```
 
-### 2️⃣ Example Output
+### 2️. Example Output
 
 | Person - Name       | First Name | Last Name |
 |---------------------|------------|-----------|
@@ -62,14 +62,12 @@ process_csv(input_csv, output_csv)
 
 ## Best Practices
 
-🔹 **Ensure input names are well-structured** – preprocessing handles some noise, but cleaner inputs yield better results.  
-🔹 **Use a GPU (if available)** – `en_core_web_trf` runs significantly faster on GPUs.  
-🔹 **Tune honorific lists as needed** – extend or modify the list based on domain-specific titles.  
+**Ensure input names are well-structured** – preprocessing handles some noise, but cleaner inputs yield better results.  
+**Use a GPU (if available)** – `en_core_web_trf` runs significantly faster on GPUs.  
+**Tune honorific lists as needed** – extend or modify the list based on domain-specific titles.  
 
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
 ---
-
-🚀 **Designed for Data Scientists & Engineers working on NLP-based name extraction workflows.**
